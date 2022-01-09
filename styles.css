@@ -1,49 +1,17 @@
-body, html {
-	height: 100%;
-	margin: 0;
-    padding: 0;
-	border: 0;
-    outline: 0;
-    background-color: #d3a5d5;
-	position: relative;
-	height: 100%;
-	opacity: .95;
-	background-position: center;
-	background-repeat: no-repeat;
-	background size: cover;
-	padding-bottom: 5vw;
-}
-
-h1 {
+.homepagetitle {
 	text-align: center;
 	margin-bottom: 2vw;
 }
 
-h3 {
+/** FAQ Positioning **/
+
+.FAQ {
 	text-align: center;
 }
 
-p {
+.FAQAns {
 	margin-left: 20vw;
 	margin-right: 20vw;
-}
-
-a {
-	color: rgb(175,300,215);
-	opacity: .9;
-}
-
-/** menu icon **/
-
-.menu {
-	width: 35px;
-  	height: 3px;
-  	background-color: black;
-  	margin: .5vw 1vw;
-}
-
-.menucontainer {
-	margin-top: 1vw;
 }
 
 /** bottom image **/
