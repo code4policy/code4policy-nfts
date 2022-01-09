@@ -1,0 +1,36 @@
+body, html {
+	height: 100%;
+	margin: 0;
+    padding: 0;
+	border: 0;
+    outline: 0;
+    background-color: #d3a5d5;
+	position: relative;
+	height: 100%;
+	opacity: .95;
+	background-position: center;
+	background-repeat: no-repeat;
+	background size: cover;
+}
+
+h1, {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+h3 {
+	text-align: center;
+}
+
+p {
+	margin-left: 20vw;
+	margin-right: 20vw;
+}
+
+h1 {
+	text-align: center;
+}
+
+a {
+	color 
+}
