@@ -5,29 +5,30 @@ html {
   background-color: ghostwhite;
 }
 
-h1 {
-  font-size: 60px;
+.homepagetitle, .beginnerpagetitle {
   text-align: center;
-  color: black;
-  margin: 0;
-  padding: 20px 0;
+  margin-bottom: 2vw;
 }
 
-h2 {
-  font-size: 30px;
-  text-align: left;
-  color: black;
-  margin: 0;
-  padding: 20px 0;
+/** FAQ Positioning **/
+
+.FAQ {
+  text-align: center;
 }
 
-body {
-  font-size: 15px;
-  width: 90 vw;
-  margin: 0 auto;
-  padding: 0 20px 20px 20px;
+.FAQAns {
+  margin-left: 20vw;
+  margin-right: 20vw;
 }
 
+/** bottom image **/
+#tokenimage {
+  display: block;
+  margin: auto;
+  border-radius: 5%;
+  max-width: 25%;
+  height: auto;
+}
 
 /* Top Navigation */
 
