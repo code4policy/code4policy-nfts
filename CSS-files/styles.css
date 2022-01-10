@@ -123,10 +123,17 @@ body {
   margin-bottom: 2vw;
 }
 
+.titlecontainer {
+  display: flex;
+  position: relative;
+  justify-content: left;
+  align-items: flex-start;
+}
+
 .cryptopricecontainer {
   display: flex;
   position: relative;
-  bottom: 15%;
+  bottom: 20%;
   justify-content: center;
   align-items: flex-start;
 }
