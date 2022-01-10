@@ -125,7 +125,7 @@ body {
 
 .titlecontainer {
   display: block;
-  position: relative;
+  position: static;
   bottom: 20%;
   justify-content: center;
   align-items: flex-start;
