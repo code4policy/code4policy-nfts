@@ -133,7 +133,7 @@ body {
 .cryptopricecontainer {
   display: flex;
   position: relative;
-  top: 5%;
+  top: 25%;
   bottom: 20%;
   justify-content: center;
   align-items: flex-start;
