@@ -76,7 +76,7 @@ body {
   text-align: center;
   justify-content: center;
   align-content: baseline;
-  align-items: center;
+  align-items: stretch;
 }
 
 .infobox {
@@ -99,19 +99,61 @@ body {
   font-size: 1.5em;
 }
 
-/** Style For Beginner content **/
-.FAQ {
+/** Style Beginner Page content **/
+.beginnerpagetitle {
+  position: relative;
+  left: 0;
+  top: 5%;
+  width: 100%;
   text-align: center;
+  color: #000;
+}
+
+.beginnerpagetitle span.BPborder {
+  background-color: rgb(247, 42, 39);
+  color: #fff;
+  padding: .5vw;
+  margin: .2ew;
+  font-size: 2em;
+  letter-spacing: .1em;
+  border-radius: 1vw;
+}
+
+.beginnercontainer {
+  display: flex;
+  position: relative;
+  top: 5%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.beginnercolumn {
+  width: 31%;
+  background-color: #fff;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  padding: 1em;
+  align-content: stretch;
+  border-radius: 1vw;
+}
+
+.FAQ {
+  color: rgb(247, 42, 39);
+  text-align: center;
+  font-size: 1.15em;
+}
+
+#FAQ1 {
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .FAQAns {
-  margin-left: 20vw;
-  margin-right: 20vw;
+
 }
 
 /** for-beginners bottom image **/
 #tokenimage {
-  display: block;
   margin: auto;
   border-radius: 5%;
   max-width: 25%;
