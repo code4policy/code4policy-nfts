@@ -12,25 +12,6 @@ body {
   background: rgb(44, 188,227);
 }
 
-/** Style For Beginner content **/
-.FAQ {
-  text-align: center;
-}
-
-.FAQAns {
-  margin-left: 20vw;
-  margin-right: 20vw;
-}
-
-/** bottom image **/
-#tokenimage {
-  display: block;
-  margin: auto;
-  border-radius: 5%;
-  max-width: 25%;
-  height: auto;
-}
-
 /* Top Navigation */
 
 /*Top Navigation Background Colors*/
@@ -79,6 +60,14 @@ body {
   border-radius: 1vw;
 }
 
+#NFTCoin {
+  position: absolute;
+  top: -1.5vw;
+  right: 8vw; 
+  max-width: 25%;
+  image-rendering: pixelated;
+}
+
 /** Style homepage links **/
 .infoboxcontainer {
   display: flex;
@@ -91,7 +80,7 @@ body {
 }
 
 .infobox {
-  width: 100%;
+  width: 25vw;
   background-color: #fff;
   margin-left: 1vw;
   margin-right: 1vw;
@@ -100,9 +89,33 @@ body {
   border-radius: 1vw;
 }
 
+.infobox:hover{
+  transform: scale(1.01);
+  box-shadow: 0.3em .3em 1.5em ;
+}
+
 .infoboxquestion, .infoboxlink {
   color: rgb(247, 42, 39);
   font-size: 1.5em;
+}
+
+/** Style For Beginner content **/
+.FAQ {
+  text-align: center;
+}
+
+.FAQAns {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+/** for-beginners bottom image **/
+#tokenimage {
+  display: block;
+  margin: auto;
+  border-radius: 5%;
+  max-width: 25%;
+  height: auto;
 }
 
 .beginnerpagetitle {
