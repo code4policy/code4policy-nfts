@@ -125,10 +125,9 @@ body {
 
 .titlecontainer {
   display: block;
-  position: static;
+  position: relative;
   bottom: 20%;
   justify-content: center;
-  align-items: flex-start;
 }
 
 .cryptopricecontainer {
@@ -141,14 +140,6 @@ body {
 
 .cryptopricecolumn {
   width: 25%;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  padding: 1em;
-  border-radius: 1vw;
-}
-
-.cryptopricecentercolumn {
-  width: 50%;
   margin-left: 1vw;
   margin-right: 1vw;
   padding: 1em;
