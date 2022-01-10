@@ -124,9 +124,9 @@ body {
 }
 
 .titlecontainer {
-  display: flex;
+  display: block;
   position: relative;
-  top: 5%;
+  bottom: 20%;
   justify-content: center;
   align-items: flex-start;
 }
