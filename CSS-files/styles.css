@@ -112,13 +112,7 @@ body {
 /** for-how-to **/
 
 .howtosection {
-  display: flex;
-  position: relative;
-  top: 25%;
   text-align: center;
-  justify-content: center;
-  align-content: baseline;
-  align-items: center;
 }
 
 
