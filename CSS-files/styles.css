@@ -109,6 +109,31 @@ body {
   margin-right: 20vw;
 }
 
+/** for-how-to **/
+
+.howtosection {
+  display: flex;
+  position: relative;
+  top: 25%;
+  text-align: center;
+  justify-content: center;
+  align-content: baseline;
+  align-items: center;
+}
+
+
+/** about-us-page **/
+
+.headshot {
+  display: block;
+  margin: auto;
+  border-radius: 5%;
+  max-width: 25%;
+  height: auto;
+}
+
+
+
 /** for-beginners bottom image **/
 #tokenimage {
   display: block;
