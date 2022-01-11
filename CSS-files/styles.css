@@ -109,6 +109,25 @@ body {
   margin-right: 20vw;
 }
 
+/** for-how-to **/
+
+.howtosection {
+  text-align: center;
+}
+
+
+/** about-us-page **/
+
+.headshot {
+  display: block;
+  margin: auto;
+  border-radius: 5%;
+  max-width: 25%;
+  height: auto;
+}
+
+
+
 /** for-beginners bottom image **/
 #tokenimage {
   display: block;
@@ -122,6 +141,8 @@ body {
   text-align: center;
   margin-bottom: 2vw;
 }
+
+/** investor-nft-charts **/
 
 .titlecontainer {
   display: block;
@@ -146,3 +167,4 @@ body {
   padding: 1em;
   border-radius: 1vw;
 }
+
