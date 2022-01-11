@@ -56,6 +56,7 @@ body {
   color: #fff;
   padding: .5vw;
   font-size: 4em;
+  font-weight: bold;
   letter-spacing: .1em;
   border-radius: 1vw;
 }
@@ -76,7 +77,7 @@ body {
   text-align: center;
   justify-content: center;
   align-content: baseline;
-  align-items: center;
+  align-items: stretch;
 }
 
 .infobox {
@@ -89,7 +90,7 @@ body {
   border-radius: 1vw;
 }
 
-.infobox:hover{
+.infobox:hover, .beginnercolumn:hover {
   transform: scale(1.01);
   box-shadow: 0.3em .3em 1.5em ;
 }
@@ -99,14 +100,78 @@ body {
   font-size: 1.5em;
 }
 
-/** Style For Beginner content **/
-.FAQ {
+.infoboxexplanation {
+  font-size: 1.25em;
+  margin: 0 3vw 0 3vw;
+}
+
+.homepagebutton {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/** Style Beginner Page content **/
+.beginnerpagetitle {
+  position: relative;
+  left: 0;
+  top: 5%;
+  width: 100%;
   text-align: center;
+  color: #000;
+  margin-bottom: 2vw;
+}
+
+.beginnerpagetitle span.BPborder {
+  background-color: rgb(247, 42, 39);
+  color: #fff;
+  padding: .5vw;
+  margin: .2ew;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: .1em;
+  border-radius: 1vw;
+}
+
+.beginnercontainer {
+  display: flex;
+  position: relative;
+  top: 5%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.beginnercolumn {
+  width: 33%;
+  background-color: #fff;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding: 1em;
+  border-radius: 1vw;
+}
+
+.FAQ {
+  color: rgb(247, 42, 39);
+  text-align: center;
+  font-size: 1.15em;
+}
+
+#FAQ1 {
+  font-size: 1.75em;
+  font-weight: bold;
+  letter-spacing: .1em;
 }
 
 .FAQAns {
-  margin-left: 20vw;
-  margin-right: 20vw;
+padding: .25em;
+}
+
+.italicsquote {
+  font-style: italic;
+}
+
+.link{
+  color: rgb(247, 42, 39);
 }
 
 /** for-how-to **/
@@ -124,22 +189,6 @@ body {
   border-radius: 5%;
   max-width: 25%;
   height: auto;
-}
-
-
-
-/** for-beginners bottom image **/
-#tokenimage {
-  display: block;
-  margin: auto;
-  border-radius: 5%;
-  max-width: 25%;
-  height: auto;
-}
-
-.beginnerpagetitle {
-  text-align: center;
-  margin-bottom: 2vw;
 }
 
 /** investor-nft-charts **/
@@ -168,3 +217,14 @@ body {
   border-radius: 1vw;
 }
 
+
+/** for-beginners bottom image **/
+#tokenimage {
+  top: 10%;
+  display: block;
+  
+/** for-beginners-page
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}  
