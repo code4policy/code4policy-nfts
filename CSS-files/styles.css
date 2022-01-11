@@ -174,11 +174,57 @@ padding: .25em;
   color: rgb(247, 42, 39);
 }
 
+/** for-how-to **/
+
+.howtosection {
+  text-align: center;
+}
+
+
+/** about-us-page **/
+
+.headshot {
+  display: block;
+  margin: auto;
+  border-radius: 5%;
+  max-width: 25%;
+  height: auto;
+}
+
+/** investor-nft-charts **/
+
+.titlecontainer {
+  display: block;
+  position: relative;
+  bottom: 20%;
+  justify-content: center;
+}
+
+.cryptopricecontainer {
+  display: flex;
+  position: relative;
+  top: 1%;
+  bottom: 10%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cryptopricecolumn {
+  width: 25%;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding: 1em;
+  border-radius: 1vw;
+}
+
+
 /** for-beginners bottom image **/
 #tokenimage {
   top: 10%;
   display: block;
+  
+/** for-beginners-page
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
+}  
