@@ -222,8 +222,8 @@ padding: .25em;
 
 
 .column {
-  float: left;
-  width: 20%;
+  float: middle;
+  width: 25%;
   margin-bottom: 16px;
   padding: 0 8px;
 }
@@ -231,6 +231,7 @@ padding: .25em;
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
+  color: ghostwhite;
 }
 
 .container {
