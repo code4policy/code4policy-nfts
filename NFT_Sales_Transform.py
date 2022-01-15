@@ -1,6 +1,6 @@
 import csv
 import json
-from pprint import pprint
+from datetime import datetime
 
 with open('data/NFT_Sales.csv','r') as f:
 	reader = csv.DictReader(f)
@@ -14,6 +14,12 @@ with open('data/NFT_Sales.json', 'r') as f:
     
 with open('data/NFT_Sales_Daily.csv','w') as f:
     writer = csv.writer(f)
-    writer.writerow(['Date','Number_of_Sales'])
+    writer.writerow(['date','close'])
     for data in data:
-        writer.writerow([data['Date'],data['Number_of_Sales']])
+        date = data['Date']
+        date_format = ("%Y-%m-%d")
+        parsed_date = datetime.strptime(date,date_format)
+        new_date = parsed_date.strftime("%d-%b-%y")
+        if parsed_date.year < 2021:
+            continue
+        writer.writerow([new_date,data['Number_of_Sales']])

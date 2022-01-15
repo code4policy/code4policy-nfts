@@ -1,6 +1,6 @@
-function drawchart(idAttribute, containerSelector, dataFile) {
+function drawchart(containerSelector, dataFile) {
 
-var margin = {top: 20, right: 50, bottom: 30, left: 50},
+var margin = {top: 50, right: 50, bottom: 50, left: 100},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -31,7 +31,6 @@ var svg = d3.select(containerSelector).append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .attr("class", "chart")
-    .attr("id", idAttribute)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -63,8 +62,8 @@ d3.csv(dataFile, function(error, data) {
       .attr("transform", "rotate(-90)")
       .attr("y", 6)
       .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text("Price ($)");
+      .style("text-anchor", "end");
+      // .text("Price ($)");
 
   svg.append("path")
       .datum(data)
@@ -85,22 +84,17 @@ d3.csv(dataFile, function(error, data) {
   svg.append("rect")
       .attr("class", "overlay")
       .attr("width", width)
-      .attr("height", height)
-      .on("mouseover", function() { focus.style("display", null); })
-      .on("mouseout", function() { focus.style("display", "none"); })
-      .on("mousemove", mousemove);
+      .attr("height", height);
 
-  function mousemove() {
-    var x0 = x.invert(d3.mouse(this)[0]),
-        i = bisectDate(data, x0, 1),
-        d0 = data[i - 1],
-        d1 = data[i],
-        d = x0 - d0.date > d1.date - x0 ? d1 : d0;
-    focus.attr("transform", "translate(" + x(d.date) + "," + y(d.close) + ")");
-    focus.select("text").text(formatCurrency(d.close));
-  }
+svg.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0 - (margin.top / 2))
+        .attr("class", "charttitle")
+        .text("NFT Sales per day in 2021")
+
 });
 
 }
 
-drawchart("dailysaleschart", "#test","data/NFT_Sales_Daily.csv");
+drawchart("#dailysaleschart","/data/NFT_Sales_Daily.csv");
+

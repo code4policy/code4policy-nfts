@@ -111,8 +111,8 @@ body {
   cursor: pointer;
 }
 
-/** Style Beginner Page content **/
-.beginnerpagetitle {
+/** Page Titles **/
+.pagetitle {
   position: relative;
   left: 0;
   top: 5%;
@@ -122,17 +122,18 @@ body {
   margin-bottom: 2vw;
 }
 
-.beginnerpagetitle span.BPborder {
+.pagetitle span.titleborder {
   background-color: rgb(247, 42, 39);
   color: #fff;
   padding: .5vw;
-  margin: .2ew;
   font-size: 2em;
   font-weight: bold;
   letter-spacing: .1em;
   border-radius: 1vw;
 }
 
+
+/** White boxes on Beginner page **/
 .beginnercontainer {
   display: flex;
   position: relative;
@@ -247,9 +248,51 @@ padding: .25em;
 #tokenimage {
   top: 10%;
   display: block;
-  
-/** for-beginners-page
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 }  
+
+/*NFT Daily Sales Chart*/
+
+.numberontainer {
+
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.numberbox {
+  background-color: #fff;
+  margin-top: 2vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding: 1em;
+  border-radius: 1vw;
+}
+
+.charttitle {
+  text-align: middle;
+  font-size: 1.75em;
+  color: rgb(247, 42, 39);
+}
+
+.chart .axis path, 
+.chart .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.chart .x.axis path {
+  display: none;
+}
+
+.chart .line {
+  fill: none;
+  stroke: rgb(247, 42, 39);
+  stroke-width: 1.5px;
+}
+
+.chart .overlay {
+  fill: none;
+  pointer-events: all;
+}
