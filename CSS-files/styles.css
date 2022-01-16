@@ -193,13 +193,68 @@ padding: .25em;
 
 /** about-us-page **/
 
+/** about-us-page **/
+
 .headshot {
   display: block;
   margin: auto;
   border-radius: 5%;
-  max-width: 25%;
+  max-width: 75%;
   height: auto;
 }
+
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  margin-left: 10px;
+  margin-right:  10px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: #fff;
+  color: black;
+  font: black;
+  padding: .5vw;
+  margin: .2ew;
+  border-radius: 1vw;
+}
+
+.container {
+  padding: 1em;
+  border-radius: 1vw;
+}
+
+.container::after, .row::after {
+  content: "";
+  display: table;
+}
+
+.about-section {
+  text-align: center;
+  float: left;
+  margin-top: 50px;
+  background-color: #fff;
+  color: rgb(247, 42, 39);
+  padding: .5vw;
+  margin: .2ew;
+  letter-spacing: .1em;
+  border-radius: 1vw;
+  display: flex;
+  top: 5%;
+  justify-content: center;
+  align-items: flex-start;
+  width: 75%;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding: 1em;
+  border-radius: 1vw;
+}
+
+
 
 /** investor-nft-charts **/
 
@@ -228,30 +283,6 @@ padding: .25em;
 }
 
 
-/** about-page **/
-
-
-.column {
-  float: middle;
-  width: 20%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-  color: ghostwhite;
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  display: table;
-}
 
 /** for-beginners bottom image **/
 #tokenimage {
