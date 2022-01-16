@@ -162,8 +162,9 @@ body {
 
 .FAQ {
   color: rgb(247, 42, 39);
-  text-align: center;
-  font-size: 1.15em;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.40em;
 }
 
 #FAQ1 {
