@@ -1,3 +1,4 @@
+// Javascript function for Datawrapper Embed
 
 function(){
 	"use strict";window.addEventListener("message",(function(e){
@@ -13,7 +14,5 @@ function(){
 	)
 }
 ();
-
-
 
 
