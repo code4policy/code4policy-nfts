@@ -339,15 +339,33 @@ padding: .25em;
   border-radius: 1vw;
 }
 
+/* D3 chart */
 
+.charttitle {
+  text-align: middle;
+  font-size: 1.75em;
+  color: rgb(247, 42, 39);
+}
 
-/** for-beginners bottom image **/
-#tokenimage {
-  top: 10%;
-  display: block;
-  
-/** for-beginners-page
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}  
+.chart .axis path, 
+.chart .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.chart .x.axis path {
+  display: none;
+}
+
+.chart .line {
+  fill: none;
+  stroke: rgb(247, 42, 39);
+  stroke-width: 1.5px;
+}
+
+.chart .overlay {
+  fill: none;
+  pointer-events: all;
+}
+

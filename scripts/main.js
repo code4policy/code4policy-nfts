@@ -1,6 +1,6 @@
-// Javascript function for Datawrapper Embed
+// // Javascript function for Datawrapper Embed
 
-function(){
+function datawrapper(){
 	"use strict";window.addEventListener("message",(function(e){
 		if(void 0!==e.data["datawrapper-height"]){
 			var t=document.querySelectorAll("iframe");
@@ -14,5 +14,3 @@ function(){
 	)
 }
 ();
-
-
