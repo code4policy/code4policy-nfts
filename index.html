@@ -10,51 +10,60 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
-<! –– Navigation Template ––>
-<div class="topnav">
-  <a class="active" href= #why_learn_nfts>Why learn about NFTs?</a>
-  <a href= #what_is_nfts> What is an NFT? </a>
-  <a href= #history>How did we got here?</a>
-  <a href= #buy_sell>How to Buy and Sell NFts?</a>
-  <a href= #intro_investing>What market data should I look at?</a>
-  <a href= #about-us>About Us</a>
-</div>
+
 
 <body>
 
+	<! –– Navigation Template ––>
+<div id="navbar">
+  <a class="active" href= "#why_nfts">Why learn about NFTs?</a>
+  <a href= "#what_is_nfts"> What is an NFT? </a>
+  <a href= "#history">How did we get here?</a>
+  <a href= "#buy_sell">How to buy and sell NFTs?</a>
+  <a href= "#intro_investing">What market data should I look at?</a>
+  <a href= "#about_us">About us</a>
+</div>
+
+	<div id ="content">
+
 <!- Homepage - Why should I learn about NFTs? -!>
 
-	<div class="new_section" id="why_NFTs">
-	<a id = why_learn_nfts>
+	<section id = "why_nfts">
 	
 	<img src="images/NFT_coin.png" id="NFTCoin">
 
   	<div class="homepagetitle">
-		<span class="HPborder">NFTs</span><br><br><br>
-    	<span class="HPborder">Non-Fungible Tokens</span>
+		<span class="HPborder">Non-Fungible Tokens <br> a.k.a NFTs</span><br><br><br>
   	</div>
-  	<!– Homepage - containter for beginners -!>
+<!– Homepage - intro containter-!>
+  	<div class="beginnercontainer">
+<div class="beginnercolumn">
+  			<div  class="FAQ" id="FAQ1">Why should I care about NFTs?</div><br>
+  			
+  			<div class="FAQAns">Chances are that you have heard about "NFTs". The technology is currently popular in the collectibles space. But its applications are broad and most certainly impact multiple sectors of the economy. Whether you are a policy maker, a tech enthusiast, or an artist, and want to learn more about this emerging technology, this site will give you an intro to NFTs.  </div><br>
+  	</div>
+  	</div>
+
+  	<!– Homepage - containter for beginners-!>
   	<div class="infoboxcontainer">
-  		<div class="infobox"><a href="for-beginners.html"><button class="homepagebutton">
+  		<div class="infobox"><a href= "#what_is_nfts"><button class="homepagebutton">
   			<div class="infoboxquestion">I've heard of them, but not really sure what they are.</div><br><br><br>
   			<div class="infoboxexplanation">Learn what an NFT is, how they came about, and just how much money is involved.</div><br><br><br>
-  			<div class="infoboxlink">I'm a Beginner.</div></button></a>
+  			<div class="infoboxlink">Tell me the basics.</div></button></a>
   		</div>
 
 			<!– Homepage - containter for investors -!>
-  		<div class="infobox"><a href="for-investors.html"><button class="homepagebutton">
+  		<div class="infobox"><a href= "#buy_sell"><button class="homepagebutton">
   			<div class="infoboxquestion">How can I get involved in NFTs?</div><br><br><br>
   			<div class="infoboxexplanation">Learn about the different blockchains NFTs are traded on, the marketplaces where you can buy or sell them, and what to think about if you're going to invest.</div><br><br><br>
-  			<div class="infoboxlink">I'm ready to spend some money.</div></button></a>
+  			<div class="infoboxlink">Tell me how to buy or sell NFTs.</div></button></a>
 
   		</div>
  	</div>
- 	</div>
- 	</a>
+ 	</section>
 
 <!- What is an NFT -!>
-	<div class="new_section" id="what_is_nfts">
-	<a id = what_is_nfts>
+	<section id="what_is_nfts">
 		<div class="beginnerpagetitle">
 		<span class="BPborder">What on earth is an NFT?</span>
   	</div>
@@ -90,16 +99,15 @@
 </div>
 </div>
 		
-	</div>
-	  </a>
+	</section>
+
 
 
 <!- How did we got here -!>
-	<div class= "new_section" id="history">
-	<a id = history>
+	<section id="history">
 
 		<div class="beginnerpagetitle">
-		<span class="BPborder">NFTs for Beginners</span>
+		<span class="BPborder">A bit of backaground</span>
   	</div>
 
   <div class="beginnercontainer">
@@ -121,13 +129,11 @@
 </div>	
 </div>
 
-</div>
-  </a>
+</section>
 
 <!- Buy and NFT -!>  
 
-	<div class="new_section" id="BuySell">
-	<a id = buy_sell>
+	<section id = "buy_sell">
  	<div class="beginnerpagetitle">
 		<span class="BPborder">How do I buy and sell NFTs?</span>
   	</div>
@@ -150,13 +156,10 @@
 		</div>
 			</div>
 
-		</div>
-  </a>
+		</section>
 
 <!- Intro to investor data -!>  
-<div class="new_section" id="IntroInvesting">
-	<a id = intro_investing>
-
+<section id = "intro_investing">
 
 <div class="beginnerpagetitle">
 		<span class="BPborder">What market data should I look at?</span>
@@ -238,16 +241,14 @@
 	    </div>
 	</div>
 
-	</div>
-  </a>
+	</section>
 
 
 <!- About Us -!>
-<div class="new_section" id="AboutUs">
-	<a id = about_us>
+<section id= "about_us">
 
 <div class="beginnerpagetitle">
-		<span class="BPborder">Who created this site?</span>
+		<span class="BPborder">About US</span>
   	</div>
 
 <div class="row">
@@ -315,10 +316,9 @@
       </div>
     </div>
   </div>
-</div>
-  </a>
+</section>
  
-
+</div>
 
 
 <! –– Link to JS File ––>
