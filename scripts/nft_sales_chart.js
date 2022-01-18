@@ -1,3 +1,7 @@
+// D3 Visualization -- line graph of Daily NFT Sales
+
+
+// create a function that will take a dataFile and palce its vizualization in an HTML container
 function drawchart(containerSelector, dataFile) {
 
 var margin = {top: 50, right: 50, bottom: 50, left: 100},
@@ -62,6 +66,7 @@ d3.csv(dataFile, function(error, data) {
       .attr("y", 6)
       .attr("x", 10)
       .attr("dy", ".71em")
+// Y-Axis title
       .text("Number of Sales");
 
   svg.append("path")
@@ -73,4 +78,5 @@ d3.csv(dataFile, function(error, data) {
 
 }
 
-drawchart("#dailysaleschart","/data/NFT_Sales_Daily.csv");
+drawchart("#dailysaleschart","data/NFT_Sales_Daily.csv");
+

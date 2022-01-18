@@ -1,3 +1,11 @@
 # code4policy-nfts
-Code4Policy 2022 NFT Group
-Tara, Kendrick, Nina, Santiago
+
+DPI 691 Code4Policy 2022 Group A1: Tara Burchmore, Kendrick McDonald, Andreina Mesalles, Santiago Melo
+
+Submission Items:
+- Sprint Board 1:
+- Sprint Board 2:
+- Backlog: 
+- 
+
+
