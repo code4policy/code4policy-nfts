@@ -59,41 +59,18 @@ d3.csv(dataFile, function(error, data) {
       .attr("class", "y axis")
       .call(yAxis)
     .append("text")
-      .attr("transform", "rotate(-90)")
       .attr("y", 6)
+      .attr("x", 10)
       .attr("dy", ".71em")
-      .style("text-anchor", "end");
-      // .text("Price ($)");
+      .text("Number of Sales");
 
   svg.append("path")
       .datum(data)
       .attr("class", "line")
       .attr("d", line);
 
-  var focus = svg.append("g")
-      .attr("class", "focus")
-      .style("display", "none");
-
-  focus.append("circle")
-      .attr("r", 4.5);
-
-  focus.append("text")
-      .attr("x", 9)
-      .attr("dy", ".35em");
-
-  svg.append("rect")
-      .attr("class", "overlay")
-      .attr("width", width)
-      .attr("height", height);
-
-svg.append("text")
-        .attr("x", (width / 2))             
-        .attr("y", 0 - (margin.top / 2))
-        .attr("class", "charttitle")
-        .text("NFT Sales per day in 2021")
-
 });
 
 }
 
-drawchart("#dailysaleschart","data/NFT_Sales_Daily.csv");
+drawchart("#dailysaleschart","/data/NFT_Sales_Daily.csv");

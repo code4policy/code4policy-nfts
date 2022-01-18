@@ -92,7 +92,7 @@ section {
   image-rendering: pixelated;
 }
 
-/** Style homepage links **/
+/** Style first section links **/
 .infoboxcontainer {
   display: flex;
   position: relative;
@@ -114,7 +114,7 @@ section {
   border-radius: 1vw;
 }
 
-.infobox:hover, .beginnercolumn:hover {
+.infobox:hover {
   transform: scale(1.01);
   box-shadow: 0.3em .3em 1.5em ;
 }
@@ -135,7 +135,7 @@ section {
   cursor: pointer;
 }
 
-/** Style Beginner Page content **/
+/** Style white blocks for text (initially used for a "for beginners page" and clas titles retained that nomenclature) **/
 .beginnerpagetitle {
   position: relative;
   left: 0;
@@ -177,7 +177,7 @@ section {
 
 .FAQ {
   color: rgb(247, 42, 39);
-  text-align: left;
+  text-align: center;
   padding: .25em;
   font-weight: bold;
   font-size: 1.40em;
@@ -200,6 +200,7 @@ padding: .25em;
 .link{
   color: rgb(247, 42, 39);
 }
+
 
 /** for-how-to **/
 
@@ -244,9 +245,13 @@ padding: .25em;
  } 
 
  .howtosection {
-  text-align: center;
-  border-radius: 1vw;
+  justify-content: center;
+  width: 75%;
   background-color: #fff;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding: 1em;
+  border-radius: 1vw;
 }
 
 
@@ -260,13 +265,17 @@ padding: .25em;
   height: auto;
 }
 
+/*.row {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}*/
+
 .column {
   float: left;
-  width: 20%;
-  margin-bottom: 16px;
-  margin-left: 10px;
-  margin-right:  10px;
-  padding: 0 8px;
+  width: 25%;
 }
 
 .card {
@@ -289,29 +298,6 @@ padding: .25em;
   content: "";
   display: table;
 }
-
-.about-section {
-  text-align: center;
-  float: left;
-  margin-top: 50px;
-  background-color: #fff;
-  color: rgb(247, 42, 39);
-  padding: .5vw;
-  margin: .2ew;
-  letter-spacing: .1em;
-  border-radius: 1vw;
-  display: flex;
-  top: 5%;
-  justify-content: center;
-  align-items: flex-start;
-  width: 75%;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  padding: 1em;
-  border-radius: 1vw;
-}
-
-
 
 /** investor-nft-charts **/
 
@@ -341,10 +327,20 @@ padding: .25em;
 
 /* D3 chart */
 
-.charttitle {
-  text-align: middle;
-  font-size: 1.75em;
+.charthed {
   color: rgb(247, 42, 39);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.40em; 
+}
+
+.chartdek {
+text-align: center;
+}
+
+.chartcitation {
+  font-size: .75em;
+  margin-left: 100px;
 }
 
 .chart .axis path, 
@@ -368,4 +364,3 @@ padding: .25em;
   fill: none;
   pointer-events: all;
 }
-
